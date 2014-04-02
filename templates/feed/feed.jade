@@ -1,0 +1,9 @@
+extends base
+
+block extra_js
+    script(type="text/javascript", src="{{ STATIC_URL }}js/feed/feed.js")
+
+block content
+    div(class="panel", ng-controller="FeedCtrl")
+
+

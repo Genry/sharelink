@@ -1,0 +1,21 @@
+- load js
+!!! 5
+html(lang='ru')
+    head
+        title= title
+
+        - include "base/common_css.jade"
+        block extra_css
+
+        - include "base/common_js.jade"
+        block extra_js
+
+        block extra_head
+
+    body(ng-app="linker", ng-controller="GlobalCtrl")
+        - django_js jquery=false i18n=false csrf=true
+
+        block header
+
+        div(ng-cloak="")
+            block content

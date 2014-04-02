@@ -1,0 +1,6 @@
+django==1.5.5
+djangorestframework
+django-annoying
+django-grappelli
+django.js
+pyjade
