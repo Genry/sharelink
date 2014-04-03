@@ -10,9 +10,9 @@ gulp.task('coffee', function() {
 });
 
 gulp.task('foundation', function () {
-  gulp.src('static/scss/foundation/*.scss')
+  gulp.src('static/scss/**/*.scss')
       .pipe(sass())
-      .pipe(gulp.dest('static/css/foundation'));
+      .pipe(gulp.dest('static/css'));
 });
 
 gulp.task('default', function() {
